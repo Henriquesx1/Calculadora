@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
 body {
-    background-color: #0c2835;
-    font: normal 13pt Arial;
+    background-color: #0F2027;  /* fallback for old browsers */
+    font-family: "Poppins", sans-serif;
     color: #008B8B;
     padding-top: 5%;
 }
 header {
     text-align: center;
     color: white;
+}
+h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 4rem;
 }
 section {
     background-color: #ffffff; 

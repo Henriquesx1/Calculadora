@@ -3,16 +3,17 @@ var tn1 = window.document.getElementById('n1')
 var tn2 = window.document.getElementById('n2')
 var n1 = Number(tn1.value)
 var n2 = Number(tn2.value)
-    if (n1 == "" || n2 == "")  {
+    if (n1 == "" && n2 == "")  {
         res.innerHTML = ('')
         tn1.value = ""
         tn2.value = ""
+        tn1.focus();
         window.alert('Digite os números corretamente')
         
     }
     else {
         r = n1 + n2 
-        res.innerHTML = `O resultado da soma entre <strong>${n1}</strong> e <strong>${n2}</strong> é <strong>${r}</strong>`
+        res.innerHTML = `O resultado da soma de <strong>${n1}</strong> e <strong>${n2}</strong> é <strong>${r}</strong>`
     }
 }
 function subtrair() {
@@ -20,15 +21,16 @@ function subtrair() {
     var tn2 = window.document.getElementById('n2')
     var n1 = Number(tn1.value)
     var n2 = Number(tn2.value)
-        if (n1 == "" || n2 == "")  {
+        if (n1 == "" && n2 == "")  {
             window.alert('Digite os números corretamente')
             res.innerHTML = ('')
             tn1.value = ""
             tn2.value = ""
+            tn1.focus();
         }
         else {
             r = n1 - n2 
-            res.innerHTML = `O resultado da subtração entre <strong>${n1}</strong> e <strong>${n2}</strong> é <strong>${r}</strong>`
+            res.innerHTML = `O resultado da subtração de <strong>${n1}</strong> e <strong>${n2}</strong> é <strong>${r}</strong>`
         }   
 }
 function dividir() {
@@ -41,10 +43,11 @@ function dividir() {
             res.innerHTML = ('')
             tn1.value = ""
             tn2.value = ""
+            tn1.focus();
         }
         else {
             r = n1 / n2 
-            res.innerHTML = `O resultado da divisão entre <strong>${n1}</strong> e <strong>${n2}</strong> é <strong>${r}</strong>`
+            res.innerHTML = `O resultado da divisão de <strong>${n1}</strong> e <strong>${n2}</strong> é <strong>${r}</strong>`
         }
     }
 function multiplicar() {
@@ -52,15 +55,16 @@ function multiplicar() {
         var tn2 = window.document.getElementById('n2')
         var n1 = Number(tn1.value)
         var n2 = Number(tn2.value)
-            if (n1 == "" || n2 == "")  {
+            if (n1 == "" && n2 == "")  {
                 window.alert('Digite os números corretamente')
                 res.innerHTML = ('')
                 tn1.value = ""
                 tn2.value = ""
+                tn1.focus();
             }
             else {
                 r = n1 * n2 
-                res.innerHTML = `O resultado da multiplicação entre <strong>${n1}</strong> e <strong>${n2}</strong> é <strong>${r}</strong>`
+                res.innerHTML = `O resultado da multiplicação de <strong>${n1}</strong> e <strong>${n2}</strong> é <strong>${r}</strong>`
         }
     }
 function raiz() {
@@ -68,11 +72,12 @@ function raiz() {
         var tn2 = window.document.getElementById('n2')
         var n1 = Number(tn1.value)
         var n2 = Number(tn2.value)
-            if (n1 == "" || n2 == "")  {
+            if (n1 == "" && n2 == "")  {
                 window.alert('Digite os números corretamente')
                 res.innerHTML = ('')
                 tn1.value = ""
                 tn2.value = ""
+                tn1.focus();
             }
             else {
                 r = Math.sqrt(n1);
@@ -84,11 +89,12 @@ function potencia() {
             var tn2 = window.document.getElementById('n2')
             var n1 = Number(tn1.value)
             var n2 = Number(tn2.value)
-                if (n1 == "" || n2 == "")  {
+                if (n1 == "" && n2 == "")  {
                     window.alert('Digite os números corretamente')
                     res.innerHTML = ('')
                     tn1.value = ""
                     tn2.value = ""
+                    tn1.focus();
                 }
                 else {
                     r = Math.pow(n1,n2);
@@ -102,5 +108,6 @@ function limpar() {
             tn1.value = ""
             tn2.value = ""
             res.innerHTML = ''
-}
+            tn1.focus();
+        }
 
